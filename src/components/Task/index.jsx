@@ -2,7 +2,7 @@ import { TimeOutline } from "react-ionicons";
 import { TrashOutline } from "react-ionicons";
 
 const Task = ({ task, provided, columns, setColumns, setSelectedColumn}) => {
-    const { id, title, description, priority, deadline, tags } = task;
+    const { id, title, description, priority,  tags } = task;
     const handleDeleteTask = (taskId) => {
         setColumns(prevColumns => {
             const newColumns = { ...prevColumns };
@@ -55,14 +55,7 @@ const Task = ({ task, provided, columns, setColumns, setSelectedColumn}) => {
             </div>
             <div className="w-full border border-"></div>
             <div className="w-full flex items-center justify-between">
-                <div className="flex items-center gap-1">
-                    <TimeOutline
-                        color={"#666"}
-                        width="19px"
-                        height="19px"
-                    />
-                    <span className="text-[13px] text-gray-700">{deadline} mins</span>
-                </div>
+
                 <div
                     className={`w-[60px] rounded-full h-[5px] ${
                         priority === "high"
