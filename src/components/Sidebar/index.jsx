@@ -2,11 +2,7 @@ import {
 	AppsOutline,
 	GridOutline,
 	HomeOutline,
-	LogOutOutline,
-	NewspaperOutline,
-	NotificationsOutline,
-	PeopleOutline,
-	PieChartOutline,
+	LogOutOutline
 } from "react-ionicons";
 
 const Sidebar = () => {
@@ -46,7 +42,7 @@ const Sidebar = () => {
 		}
 	];
 	return (
-		<div className="fixed left-0 top-0 md:w-[230px] w-[60px] overflow-hidden h-full flex flex-col">
+		<div className=" left-0 top-0 md:w-[230px] w-[60px] overflow-hidden h-full flex flex-col z-1 fixed">
 			<div className="w-full flex items-center md:justify-start justify-center md:pl-5 h-[70px] bg-[#fff]">
 				<span className="text-blue-400 font-semibold text-2xl md:block hidden">Kanban</span>
 
