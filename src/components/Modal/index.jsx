@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from "react";
-
+import { RxCross2 } from "react-icons/rx";
 import { uid  as uuidv4 } from "uid";
 const AddModal = ({ isOpen, onClose, setOpen, handleAddTask }) => {
 	const initialTaskData = {
@@ -52,11 +52,12 @@ const AddModal = ({ isOpen, onClose, setOpen, handleAddTask }) => {
 				isOpen ? "grid" : "hidden"
 			}`}
 		>
-			<div
+			{/* <div
 				className="w-full h-full bg-black opacity-70 absolute left-0 top-0 z-20"
 				onClick={closeModal}
-			></div>
+			><RxCross2/>hi</div> */}
 			<div className="md:w-[30vw] w-[90%] bg-white rounded-lg shadow-md z-50 flex flex-col items-center gap-3 px-5 py-6">
+                <div onClick={closeModal} className="ml-auto "><RxCross2 className="cursor-pointer"/></div>
 				<input
 					type="text"
 					name="title"

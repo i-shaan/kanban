@@ -25,7 +25,7 @@ const Task = ({ task, provided, columns, setColumns, setSelectedColumn}) => {
             {...provided.dragHandleProps}
             className="w-full cursor-grab bg-slate-100 flex flex-col justify-between gap-3 items-start shadow-sm rounded-xl px-3 py-4"
         >
-            <div className="flex justify-between">
+            <div className="flex w-full">
                 {/* Display tags at the beginning */}
                 <div className="flex gap-2">
                     {tags.map((tag) => (
@@ -39,7 +39,7 @@ const Task = ({ task, provided, columns, setColumns, setSelectedColumn}) => {
                     ))}
                 </div>
                 {/* Display delete icon at the rightmost side */}
-                <div>
+                <div className="ml-auto ">
                     <TrashOutline
                         color={"#666"}
                         width="19px"
