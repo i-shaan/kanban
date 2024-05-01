@@ -1,7 +1,7 @@
 import { uid  as uuidv4 } from "uid";
 
 
-import { getRandomColors } from "../helper/getRandomColors";
+
 
 export const Board = {
 	
@@ -15,8 +15,8 @@ export const Board = {
 				priority: "high",
 				deadline: 50,
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Test",  },
+					{ title: "Front",  },
 				],
 			},
 			{
@@ -28,8 +28,8 @@ export const Board = {
 				image:"" ,
 				alt: "task image",
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Test",  },
+					{ title: "Front",  },
 				],
 			},
 		],
@@ -46,8 +46,8 @@ export const Board = {
 				image: "",
 				alt: "task image",
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Test",  },
+					{ title: "Front",  },
 				],
 			},
 		],
@@ -62,8 +62,8 @@ export const Board = {
 				priority: "low",
 				deadline: 50,
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Test",  },
+					{ title: "Front",  },
 				],
 			},
 			{
@@ -73,8 +73,8 @@ export const Board = {
 				priority: "medium",
 				deadline: 50,
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Test",  },
+					{ title: "Front",  },
 				],
 			},
 		],
@@ -91,8 +91,8 @@ export const Board = {
 				image: "",
 				alt: "task image",
 				tags: [
-					{ title: "Test", ...getRandomColors() },
-					{ title: "Front", ...getRandomColors() },
+					{ title: "Test",  },
+					{ title: "Front",  },
 				],
 			},
 		],

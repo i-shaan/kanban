@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from "react";
-import { getRandomColors } from "../../helper/getRandomColors";
+
 import { uid  as uuidv4 } from "uid";
 const AddModal = ({ isOpen, onClose, setOpen, handleAddTask }) => {
 	const initialTaskData = {
@@ -28,7 +28,7 @@ const AddModal = ({ isOpen, onClose, setOpen, handleAddTask }) => {
 
 	const handleAddTag = () => {
 		if (tagTitle.trim() !== "") {
-			const { bg, text } = getRandomColors();
+		
 			const newTag = { title: tagTitle.trim(), bg, text };
 			setTaskData({ ...taskData, tags: [...taskData.tags, newTag] });
 			setTagTitle("");
